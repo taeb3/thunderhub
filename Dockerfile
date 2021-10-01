@@ -1,7 +1,7 @@
 # ---------------
 # Install Dependencies
 # ---------------
-FROM node:14.15-alpine as deps
+FROM node:14.17.6-alpine as deps
 
 WORKDIR /app
 
@@ -39,7 +39,7 @@ RUN npm prune --production
 # ---------------
 # Release App
 # ---------------
-FROM node:14.15-alpine
+FROM node:14.17.6-alpine
 
 WORKDIR /app
 
